@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMessengerPhotosTable extends Migration
+class CreateMessengerFilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateMessengerPhotosTable extends Migration
      */
     public function up()
     {
-        Schema::create('messenger_photos', function (Blueprint $table) {
+        Schema::create('messenger_files', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('message_id');
             $table->string('path');
@@ -32,6 +32,6 @@ class CreateMessengerPhotosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('messenger_photos');
+        Schema::dropIfExists('messenger_files');
     }
 }

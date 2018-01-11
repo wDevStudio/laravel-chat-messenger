@@ -51,7 +51,7 @@ class Message extends Model
      */
     public function conversation()
     {
-        return $this->belongsTo('BaklySystems\LaravelMessenger\Models\Conversation');
+        return $this->belongsTo(\BaklySystems\LaravelMessenger\Models\Conversation::class);
     }
 
     /**
@@ -61,6 +61,14 @@ class Message extends Model
      */
     public function sender()
     {
-        return $this->belongsTo(config('messenger.user.model', config('messenger.user.model', 'App\User')));
+        return $this->belongsTo(config('messenger.user.model', config('messenger.user.model', \App\User::class)));
+    }
+
+    /**
+     * Get message files.
+     */
+    public function files()
+    {
+        return $this->hasMany(\BaklySystems\LaravelMessenger\Models\File::class);
     }
 }

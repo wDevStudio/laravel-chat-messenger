@@ -41,7 +41,7 @@ class Conversation extends Model
      */
     public function messages()
     {
-        return $this->hasMany('BaklySystems\LaravelMessenger\Models\Message', 'conversation_id');
+        return $this->hasMany(\BaklySystems\LaravelMessenger\Models\Message::class, 'conversation_id');
     }
 
     /**
@@ -51,7 +51,7 @@ class Conversation extends Model
      */
     public function userOne()
     {
-        return $this->belongsTo(config('messenger.user.model', 'App\User'),  'user_one');
+        return $this->belongsTo(config('messenger.user.model', \App\User::class),  'user_one');
     }
 
     /**
@@ -61,7 +61,7 @@ class Conversation extends Model
      */
     public function userTwo()
     {
-        return $this->belongsTo(config('messenger.user.model', 'App\User'),  'user_two');
+        return $this->belongsTo(config('messenger.user.model', \App\User::class),  'user_two');
     }
 
     /**
