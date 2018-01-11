@@ -31,7 +31,7 @@ In `config/app.php` file
 
 ### Laravel Messenger Files
 
-Then, run `php artisan vendor:publish` to publish the config file, MessageController and assets.
+Then, run `php artisan vendor:publish --tag=messenger --force` to publish the config file, MessageController and assets.
 
 ### Laravel Messenger Styles and Scripts
 
@@ -52,14 +52,14 @@ And voila, you can start conversation with any user by linking to `your-domain.c
 To publish and edit messenger migrations, run the publish command with `messenger-migrations` tag.
 
 ```bash
-$ php artisan vendor:publish --tag messenger-migrations
+$ php artisan vendor:publish --tag messenger-migrations --force
 ```
 ### Views
 
 To publish and edit messenger views, run the publish command with `messenger-views` tag.
 
 ```bash
-$ php artisan vendor:publish --tag messenger-views
+$ php artisan vendor:publish --tag messenger-views --force
 ```
 
 ## TODO
