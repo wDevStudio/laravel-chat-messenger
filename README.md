@@ -24,7 +24,7 @@ In `config/app.php` file
 
 'aliases' => [
     ...
-    'wDevStudio' => BaklySystems\LaravelMessenger\Facades\Messenger::class,
+    'wDevStudio' => wDevStudio\LaravelMessenger\Facades\Messenger::class,
     ...
 ];
 ```
