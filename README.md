@@ -24,7 +24,7 @@ In `config/app.php` file
 
 'aliases' => [
     ...
-    'wDevStudio' => wDevStudio\LaravelMessenger\Facades\Messenger::class,
+    'Messenger' => wDevStudio\LaravelMessenger\Facades\Messenger::class,
     ...
 ];
 ```
