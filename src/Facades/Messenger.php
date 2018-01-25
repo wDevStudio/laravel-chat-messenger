@@ -1,6 +1,6 @@
 <?php
 
-namespace BaklySystems\LaravelMessenger\Facades;
+namespace wDevStudio\LaravelMessenger\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
