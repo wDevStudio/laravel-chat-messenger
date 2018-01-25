@@ -37,6 +37,7 @@ class Messenger
                       ->whereUserTwo($authId);
             })->first();
 
+        
         return $conversation;
     }
 
