@@ -10,7 +10,7 @@ Laravel Messenger supports Laravel 5.3 and higher.
 Require via composer
 
 ```bash
-$ composer require baklysystems/laravel-chat-messenger
+$ composer require wdevstudio/laravel-chat-messenger
 ```
 
 In `config/app.php` file
@@ -18,13 +18,13 @@ In `config/app.php` file
 ```php
 'providers' => [
     ...
-    BaklySystems\LaravelMessenger\LaravelMessengerServiceProvider::class,
+    wDevStudio\LaravelMessenger\LaravelMessengerServiceProvider::class,
     ...
 ];
 
 'aliases' => [
     ...
-    'Messenger' => BaklySystems\LaravelMessenger\Facades\Messenger::class,
+    'wDevStudio' => BaklySystems\LaravelMessenger\Facades\Messenger::class,
     ...
 ];
 ```
