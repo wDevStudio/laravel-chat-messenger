@@ -1,6 +1,6 @@
 <?php
 
-namespace BaklySystems\LaravelMessenger\Models;
+namespace wDevStudio\LaravelMessenger\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -41,7 +41,7 @@ class Conversation extends Model
      */
     public function messages()
     {
-        return $this->hasMany(\BaklySystems\LaravelMessenger\Models\Message::class, 'conversation_id');
+        return $this->hasMany(\wDevStudio\LaravelMessenger\Models\Message::class, 'conversation_id');
     }
 
     /**
