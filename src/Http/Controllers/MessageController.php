@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Pusher\Pusher;
 use Illuminate\Http\Request;
-use BaklySystems\LaravelMessenger\Models\Message;
-use BaklySystems\LaravelMessenger\Facades\Messenger;
-use BaklySystems\LaravelMessenger\Models\Conversation;
+use wDevStudio\LaravelMessenger\Models\Message;
+use wDevStudio\LaravelMessenger\Facades\Messenger;
+use wDevStudio\LaravelMessenger\Models\Conversation;
 
 class MessageController extends Controller
 {
