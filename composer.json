@@ -35,16 +35,16 @@
     },
     "autoload": {
         "psr-4": {
-            "wDdevStudio\\LaravelMessenger\\": "src/"
+            "wDevStudio\\LaravelMessenger\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "wDdevStudio\\LaravelMessenger\\LaravelMessengerServiceProvider"
+                "wDevStudio\\LaravelMessenger\\LaravelMessengerServiceProvider"
             ],
             "aliases": {
-                "Messenger": "wDdevStudio\\LaravelMessenger\\Facades\\Messenger"
+                "Messenger": "wDevStudio\\LaravelMessenger\\Facades\\Messenger"
             }
         }
     }
