@@ -31,7 +31,8 @@
     ],
     "require": {
         "php": ">=7.0",
-    	"illuminate/support": "~5"
+    	"illuminate/support": "~5",
+	"pusher/pusher-php-server": ">=2.6"
     },
     "autoload": {
         "psr-4": {
