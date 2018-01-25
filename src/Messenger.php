@@ -7,10 +7,10 @@
  * @license MIT
  */
 
-namespace BaklySystems\LaravelMessenger;
+namespace wDevStudio\LaravelMessenger;
 
-use BaklySystems\LaravelMessenger\Models\Message;
-use BaklySystems\LaravelMessenger\Models\Conversation;
+use wDevStudio\LaravelMessenger\Models\Message;
+use wDevStudio\LaravelMessenger\Models\Conversation;
 
 class Messenger
 {
