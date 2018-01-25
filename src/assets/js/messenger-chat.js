@@ -62,7 +62,7 @@
     function newMessage(message, messageClass, failed = 0) {
         $('.messenger-body').append('\
             <div class="row message-row">\
-                <p class="' + messageClass + '">' + message.message + '</p>\
+                \
                 '+ newMenu(messageClass, message.id) +'\
             </div>\
         ');
@@ -76,10 +76,22 @@
             ');
         } else {
             $('#message-body').val('');
+            refreshTable();
         }
         scrollMessagesDown();
     }
 
+    function refreshTable() {
+        //$('div.messenger-body').fadeOut();
+        $('div.messenger-body').load('/messenger/t/'+withId + ' .messenger-body', function() {
+            //$('div.messenger-body').fadeIn();
+            loadThreads();
+        });
+    }
+
+    setInterval(function(){
+        refreshTable() // this will run after every 5 seconds
+    }, 2000);
     /**
      * Scroll messages down to some height or bottom.
      */
@@ -126,7 +138,6 @@
             }
         });
     }
-
     /**
      * Play message notification sound.
      */
