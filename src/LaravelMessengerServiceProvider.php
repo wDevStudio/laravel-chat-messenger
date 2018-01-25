@@ -1,6 +1,6 @@
 <?php
 
-namespace BaklySystems\LaravelMessenger;
+namespace wDevStudio\LaravelMessenger;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -24,7 +24,7 @@ class LaravelMessengerServiceProvider extends ServiceProvider
         ], 'messenger');
 
         // routes.
-        $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
+        //$this->loadRoutesFrom(__DIR__.'/routes/routes.php');
 
         // migrations.
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
