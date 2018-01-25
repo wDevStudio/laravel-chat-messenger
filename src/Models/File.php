@@ -1,6 +1,6 @@
 <?php
 
-namespace BaklySystems\LaravelMessenger\Models;
+namespace wDevStudio\LaravelMessenger\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
